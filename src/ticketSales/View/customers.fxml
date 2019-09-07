@@ -7,7 +7,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketSales.Controller.CustomersController">
    <children>
       <Label layoutX="330.0" layoutY="20.0" text="Customers">
@@ -15,5 +14,26 @@
             <Font name="System Bold" size="26.0" />
          </font>
       </Label>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="74.0" prefHeight="268.0" prefWidth="779.0">
+        <columns>
+          <TableColumn fx:id="columnFirstN" prefWidth="132.33334350585938" text="First Name" />
+          <TableColumn fx:id="columnLastN" prefWidth="97.33332824707031" text="Surname" />
+            <TableColumn fx:id="columnAddress" prefWidth="135.33334350585938" text="Address" />
+            <TableColumn fx:id="columnPostC" prefWidth="107.66665649414062" text="Post Code" />
+            <TableColumn fx:id="columnTele" minWidth="0.0" prefWidth="0.0" text="Tel." />
+            <TableColumn fx:id="columnEmail" minWidth="0.0" prefWidth="180.0" text="Email" />
+            <TableColumn fx:id="columnDOB" prefWidth="123.0" text="D.O.B." />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonNewCust" layoutX="9.0" layoutY="437.0" mnemonicParsing="false" onAction="#addCustButton" prefHeight="37.0" prefWidth="241.0" text="Add New Customer" />
+      <Button fx:id="buttonRemCust" layoutX="274.0" layoutY="436.0" mnemonicParsing="false" onAction="#deleteCustButton" prefHeight="39.0" prefWidth="219.0" text="Remove Customer" />
+      <Button fx:id="buttonDashboard" layoutX="518.0" layoutY="439.0" mnemonicParsing="false" onAction="#gotoDashButton" prefHeight="37.0" prefWidth="266.0" text="DashBoard" />
+      <TextField fx:id="fNameField" layoutX="9.0" layoutY="354.0" prefHeight="25.0" prefWidth="181.0" promptText="First Name" />
+      <TextField fx:id="sNameField" layoutX="201.0" layoutY="354.0" prefHeight="25.0" prefWidth="170.0" promptText="Surname" />
+      <TextField fx:id="addressField" layoutX="383.0" layoutY="354.0" prefHeight="25.0" prefWidth="272.0" promptText="Address" />
+      <TextField fx:id="postField" layoutX="663.0" layoutY="354.0" prefHeight="25.0" prefWidth="128.0" promptText="Post Code" />
+      <TextField fx:id="telField" layoutX="9.0" layoutY="393.0" prefHeight="25.0" prefWidth="181.0" promptText="Telephone Number" />
+      <TextField fx:id="emailField" layoutX="202.0" layoutY="393.0" prefHeight="25.0" prefWidth="269.0" promptText="Email" />
+      <DatePicker fx:id="dobPicker" layoutX="484.0" layoutY="392.0" prefHeight="25.0" prefWidth="308.0" promptText="Date of Birth" />
    </children>
 </AnchorPane>

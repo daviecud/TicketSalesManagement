@@ -3,10 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/Controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/Controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/View/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/View/dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ticketSales/Controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/Controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ticketSales/View/dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/View/dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/Controller/CustomersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/Controller/CustomersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/Model/CustomersModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/Model/CustomersModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/View/customers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TicketSalesJFX/ticketSales/View/customers.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ticketSales/Controller/CustomersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/Controller/CustomersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ticketSales/Controller/VenueStandsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/Controller/VenueStandsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ticketSales/Model/CustomersModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/Model/CustomersModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ticketSales/Model/VenueStandsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/Model/VenueStandsModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ticketSales/View/customers.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/View/customers.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ticketSales/View/stands.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/ticketSales/View/stands.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -209,7 +214,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

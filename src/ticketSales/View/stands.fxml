@@ -1,14 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="ticketSales.Controller.VenueStandsController"
-            prefHeight="500.0" prefWidth="800.0">
-
+<AnchorPane fx:id="standsTableView" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ticketSales.Controller.VenueStandsController">
+   <children>
+      <Label layoutX="358.0" layoutY="21.0" text="Stands">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="standsTable" layoutX="47.0" layoutY="92.0" prefHeight="216.0" prefWidth="486.0">
+        <columns>
+          <TableColumn fx:id="columnStandName" prefWidth="167.0" text="Stand Name" />
+          <TableColumn fx:id="columnCapacity" minWidth="5.666664123535156" prefWidth="108.0" text="Capacity" />
+            <TableColumn fx:id="columnTicketCost" prefWidth="131.6666717529297" text="Ticket Cost (£)" />
+            <TableColumn fx:id="columnDisabled" prefWidth="79.66668701171875" text="Disabled" />
+        </columns>
+      </TableView>
+      <TextField fx:id="standNameField" layoutX="548.0" layoutY="96.0" prefHeight="25.0" prefWidth="192.0" promptText="Stand Name" />
+      <TextField fx:id="capacityField" layoutX="550.0" layoutY="137.0" prefHeight="25.0" prefWidth="190.0" promptText="Capacity" />
+      <TextField fx:id="ticketCostField" layoutX="550.0" layoutY="180.0" prefHeight="25.0" prefWidth="190.0" promptText="Ticket Cost" />
+      <Button fx:id="buttonAddStand" layoutX="551.0" layoutY="263.0" mnemonicParsing="false" onAction="#addStand" prefHeight="45.0" prefWidth="190.0" text="Add stand">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="disabilityChoiceBx" layoutX="550.0" layoutY="219.0" prefHeight="25.0" prefWidth="191.0" />
+      <Button fx:id="buttonDetailedStand" layoutX="56.0" layoutY="333.0" mnemonicParsing="false" onAction="#gotoDetailedStandButton" text="Stand Details" />
+      <Button fx:id="buttonCustomers" layoutX="57.0" layoutY="375.0" mnemonicParsing="false" onAction="#gotoCustomersButton" text="Customers" />
+      <Button fx:id="buttonDashboard" layoutX="58.0" layoutY="414.0" mnemonicParsing="false" onAction="#dashboardButton" text="Dashboard" />
+   </children>
 </AnchorPane>
