@@ -6,6 +6,7 @@ import javafx.beans.property.SimpleStringProperty;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.Date;
 
 public class CustomersModel {
@@ -82,5 +83,9 @@ public class CustomersModel {
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
+    }
+
+    public int getAge() {
+        return Period.between(dob, LocalDate.now()).getYears();
     }
 }

@@ -36,6 +36,7 @@ public class VenueStandsController implements Initializable {
     public Button buttonCustomers;
     public Button buttonDashboard;
 
+    //TODO fix add stand to tableview, create ability to edit table entries
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -49,7 +50,7 @@ public class VenueStandsController implements Initializable {
 
     }
 
-    private ObservableList<VenueStandsModel> getStands() {
+    protected ObservableList<VenueStandsModel> getStands() {
 
         ObservableList<VenueStandsModel> vStands = FXCollections.observableArrayList();
         vStands.add(new VenueStandsModel("Sandy Jardine Stand", 20000, 589.99, true));

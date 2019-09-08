@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import ticketSales.Model.VenueStandsModel;
 
 import java.io.IOException;
 import java.net.URL;
@@ -29,18 +30,28 @@ public class MainController implements Initializable {
     public Button buttonStands;
     public PieChart pieSales;
 
+    private VenueStandsModel selectedStand;
+    VenueStandsController controller;
     ObservableList<String> list = FXCollections.observableArrayList("Main Stand", "Sandy Jardine Stand", "Broomloan Stand", "Copland Road");
 
+    public void initStandData(VenueStandsModel stands) {
+        selectedStand = stands;
+        standNameField.setText(selectedStand.getStandName());
+        capacityField.setText(Integer.toString(selectedStand.getCapacity()));
+        ticketField.setText(Double.toString(selectedStand.getTicketCost()));
+    }
+
+    //TODO sort how to populate combobox with database, populate piechart with ticket sales for each stand
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         comboStandSelect.setItems(list);
+
     }
 
     public void showStandButton(ActionEvent actionEvent) {
     }
 
     public void gotoCustomerButton(ActionEvent actionEvent) throws IOException {
-
         Parent customersTableView = FXMLLoader.load(getClass().getResource("../View/customers.fxml"));
         Scene customersScene = new Scene(customersTableView);
 
@@ -51,7 +62,6 @@ public class MainController implements Initializable {
     }
 
     public void gotoVenueButton(ActionEvent actionEvent) throws IOException {
-
         Parent venueStandsView = FXMLLoader.load(getClass().getResource("../View/stands.fxml"));
         Scene venueStandsScene = new Scene(venueStandsView);
 
@@ -65,11 +75,7 @@ public class MainController implements Initializable {
         System.exit(1);
     }
 
-
-
     public void comboChange(ActionEvent actionEvent) {
-
-        standNameField.setText(comboStandSelect.getValue()); //get selected value from comboBox and set value in label field
-
+        standNameField.setText(comboStandSelect.getValue());
     }
 }
