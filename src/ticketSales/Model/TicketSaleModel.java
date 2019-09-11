@@ -1,6 +1,7 @@
 package ticketSales.Model;
 
 import javafx.collections.ObservableList;
+import org.jetbrains.annotations.Contract;
 
 import java.util.List;
 
@@ -8,6 +9,7 @@ public class TicketSaleModel {
 
     List<CustomersModel> customers;
     VenueStandsModel stands;
+
 
     public TicketSaleModel() {
     }

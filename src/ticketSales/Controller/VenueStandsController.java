@@ -36,7 +36,7 @@ public class VenueStandsController implements Initializable {
     public Button buttonCustomers;
     public Button buttonDashboard;
 
-    //TODO fix add stand to tableview, create ability to edit table entries
+    //TODO create ability to edit table entries
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -63,16 +63,22 @@ public class VenueStandsController implements Initializable {
         return vStands;
 
     }
-
+    //Add to stand to tableview action event/button
     public void addStand(ActionEvent actionEvent) {
 
         VenueStandsModel stands = new VenueStandsModel(standNameField.getText(), Integer.parseInt(capacityField.getText()),
                 Double.parseDouble(ticketCostField.getText()), Boolean.parseBoolean(disabilityChoiceBx.getAccessibleText()));
 
+        standsTable.getItems().add(stands);
+
+        standNameField.clear();
+        capacityField.clear();
+        ticketCostField.clear();
 
     }
 
     public void gotoDetailedStandButton(ActionEvent actionEvent) {
+        //TODO setup fxml page for DetailedStandView & Model
     }
 
     public void gotoCustomersButton(ActionEvent actionEvent) throws IOException {
